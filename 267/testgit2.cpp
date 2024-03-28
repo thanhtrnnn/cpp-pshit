@@ -18,7 +18,6 @@ int main()
     {
         int n; cin >> n;
         vector<int> a(n);
-        forloop(i, 0, n) cin >> a[i];
-        ặioajwdka[pưk]
+        forloop(i, 0, n) cin >> a[i];   
     }
 }
