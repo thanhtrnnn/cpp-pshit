@@ -1,4 +1,16 @@
-ky thi LAP TRINH ICPC PTIT  bat dau to chuc     tu     nam 2010. nhu 
-vay, nam nay la          tron 10 nam!
-    vay CO PHAI NAM NAY LA KY THI LAN THU 10?        khong phai! nam nay 
-la KY THI LAN THU 11!?
+2
+4 4
+2 1 0 0
+3 2 1 1
+4 3 2 1
+2 2 1 0
+-1 -1 -1
+-1 8 -1
+-1 -1 -1
+3 3
+1 2 3
+4 5 6
+7 8 9
+1 1 1
+1 1 1
+1 1 1

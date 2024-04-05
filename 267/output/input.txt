@@ -1,5 +1,9 @@
 2
-1
-NguyeN    vAn    Nam
-2
-hoAng  le Nhat THONG chi
+1 5
+X O X O X 
+5 4
+X X X X
+X O X X
+X O O X
+X O X X
+X X O O 
