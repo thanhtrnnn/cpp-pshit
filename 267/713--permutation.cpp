@@ -35,13 +35,13 @@ int main()
 int cnt = 0;
 void backtrack(vector<vector<int>> &list, vector<int> &nums, int start)
 {
-    if (start == nums.size()) 
+    if (start == (int)nums.size()) 
     {
         list.push_back(nums);
-        cout << cnt++ << " ";
+        // cout << cnt++ << " ";
     }
     else {
-        for (int i = start; i < nums.size(); i++)
+        for (int i = start; i < (int)nums.size(); i++)
         {
             swap(nums[start], nums[i]);
             backtrack(list, nums, start + 1);
@@ -59,25 +59,21 @@ vector<vector<int>> permute(vector<int>& nums)
 
 int main()
 {
-    // #ifndef ONLINE_JUDGE
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
-    // #endif
-
     ios::sync_with_stdio(false); cin.tie(0);
 
-    int t; cin >> t;
-    while(t--)
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+
+    int n; cin >> n;
+    vector<int> a(n);
+    forloop(i, 0, n) cin >> a[i];
+    vector<vector<int>> ans = permute(a);
+    for (auto x : ans)
     {
-        int n; cin >> n;
-        vector<int> a(n);
-        forloop(i, 0, n) cin >> a[i];
-        vector<vector<int>> ans = permute(a);
-        for (auto x : ans)
-        {
-            for (int i : x) cout << i << " ";
-            cout << endl;
-        }
+        for (int i : x) cout << i << " ";
+        cout << endl;
     }
 }
 

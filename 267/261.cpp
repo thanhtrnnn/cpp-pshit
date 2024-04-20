@@ -14,7 +14,7 @@ int main()
     ios::sync_with_stdio(false); cin.tie(0);
 
     int n; cin >> n;
-    int a[n][n], c[n][n];
+    int a[n][n];
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
             cin >> a[i][j];
@@ -27,11 +27,11 @@ int main()
 
     forloop(i, 0, n)
         forloop(j, 0, n)
-            c[i][j] = a[i][j] * b[i%m][j%m];
+            a[i][j] *= b[i%m][j%m];
 
     forloop(i, 0, n)
     {
-        forloop(j, 0, n) cout << c[i][j] << " ";
+        forloop(j, 0, n) cout << a[i][j] << " ";
         cout << endl;
     }
 }

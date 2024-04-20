@@ -1,9 +1,2 @@
-2
-1 5
-X O X O X 
-5 4
-X X X X
-X O X X
-X O O X
-X O X X
-X X O O 
+5
+2 3 6 1 2
