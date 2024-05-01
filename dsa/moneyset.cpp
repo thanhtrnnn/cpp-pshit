@@ -18,7 +18,7 @@ void printMoneySet()
 void genMoneySet(int pos)
 {
     int lastIndex = (curMoneySet.empty() ? 1 : curMoneySet.back());
-    for (int i = lastIndex; i <= n; i ++)
+    for (int i = lastIndex; i <= n; i++)
     {
         //Lấy thêm 1 tờ tiền mới vào tập hợp
         curMoneySet.push_back(i);
@@ -39,8 +39,13 @@ void genMoneySet(int pos)
 
 int main()
 {
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+
     cin >> n >> S;
-    for (int i = 1; i <= n; i ++) cin >> a[i];
+    for (int i = 1; i <= n; i++) cin >> a[i];
     curMoneySet.clear();
     curMoneySum = 0;
     genMoneySet(1);
