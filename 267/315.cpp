@@ -13,6 +13,7 @@ string solve(string s)
         {
             int tmp = i;
             for (int j = i+1; j < n; j++)
+            // Tim so < s[tmp] ma lon nhat
                 if (s[j] < s[i-1] && s[tmp] < s[j]) 
                     tmp = j;
             swap(s[tmp], s[i-1]);

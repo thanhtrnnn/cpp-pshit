@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define forloop(i, a, b) for (int i = (a); i < (b); i++)
+#define print(a) forloop(i, 0, n) cout << a[i] << " "
+
 using ll = long long;
 
 int main()
@@ -33,6 +36,6 @@ int main()
             sum = (left == 0) ? pre[right] : pre[right] - pre[left - 1];
             cout << sum << endl;
         }
-
+        // print(pre);
     }
 }
