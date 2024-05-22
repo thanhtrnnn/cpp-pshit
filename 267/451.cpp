@@ -18,7 +18,7 @@ int main()
     {
         int n, k, x; cin >> n;
         vector<int> a(n);
-            forloop(i, 0, n) cin >> a[i];
+        forloop(i, 0, n) cin >> a[i];
         cin >> k >> x;
 
         int pos = lower_bound(a.begin(), a.end(), x) - a.begin();

@@ -8,17 +8,13 @@ using ll = long long;
 
 int main()
 {
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "rb", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
+    // #ifndef ONLINE_JUDGE
+    // freopen("input.txt", "rb", stdin);
+    // freopen("output.txt", "w", stdout);
+    // #endif
 
     ios::sync_with_stdio(false); cin.tie(0);
 
-    std::vector<char> file_contents;
-    char c;
-    while (std::cin.get(c)) {
-        file_contents.push_back(c);
-    }
-    print(file_contents, file_contents.size());
+    int n; cin >> n;
+    cout << n;
 }

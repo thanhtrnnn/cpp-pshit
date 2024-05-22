@@ -30,7 +30,7 @@ int main()
     forloop(i, k, n)
     {
         tmp = tmp - pos[i-k] + pos[i];
-        res = min(res, tmp);
+        res = min(res, tmp); // tmp - 1 + 0 -> res changed
     }
     cout << res << endl;
 }

@@ -22,8 +22,7 @@ int main()
         forloop(i, 0, n)
         {
             cin >> a[i];
-            if (a[i] == 0) 
-                zeros++;
+            if (a[i] == 0) zeros++;
             else {
                 if (i != 0 && a[i] == a[i-1])
                 {

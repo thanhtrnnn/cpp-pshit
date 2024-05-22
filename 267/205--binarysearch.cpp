@@ -17,6 +17,7 @@ int binmax(vector<int> arr, int n)
     }
     return arr[right];
 }
+
 int binmax2(vector<int> a, int n)
 {
     int left = 0;

@@ -9,6 +9,7 @@ int wordscount(string str)
     return distance(istream_iterator<string>(stream), istream_iterator<string>());
 }
 
+int main()
 {
     #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
