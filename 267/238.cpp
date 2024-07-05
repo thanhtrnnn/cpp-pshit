@@ -40,13 +40,6 @@ void printmatrix()
         }
         cout << endl;
     }
-
-    // forloop(i, 0, n)
-    // {
-    //     forloop(j, 0, m)
-    //         cout << a[i][j] << " ";
-    //     cout << endl;
-    // }
 }
 
 int main()
